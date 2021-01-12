@@ -22,3 +22,5 @@ Route::get('/about', function () {
         'articles' => App\Models\Article::take(3)->latest()->get()
     ]);
 });
+
+Route::get('/articles/{article}', 'App/Http/Controllers/ArticlesController@show');
