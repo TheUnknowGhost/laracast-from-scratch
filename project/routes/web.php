@@ -23,4 +23,4 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/articles/{article}', 'App/Http/Controllers/ArticlesController@show');
+Route::get('/articles/{article}', 'App\Http\Controllers\ArticlesController@show');
